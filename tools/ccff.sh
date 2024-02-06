@@ -4,6 +4,6 @@
 
 class_name="aula$1"
 
-mkdir $class_name && touch "$class_name/$class_name.py"
+mkdir aulas/$class_name && touch aulas/"$class_name/$class_name.py"
 
 
