@@ -2,8 +2,9 @@
 
 # ccf (Create Class Folder and File)
 
-class_name="aula$1"
+section_number=$1
+class_number="aula$2"
 
-mkdir aulas/$class_name && touch aulas/"$class_name/$class_name.py"
-
-
+aulas_folder="./aulas"
+section= ls $aulas_folder | grep $section_number
+mkdir $aulas_folder/$section/$class_number && touch "$aulas_folder/$section/$class_number/$class_number.py"
